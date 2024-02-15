@@ -7,14 +7,15 @@
 <hr>
 
 ## Download / Installation
-
+- Download **iTunes** from [here](https://www.apple.com/itunes/download/win64)
+- Extract it (using WinRAR/7zip) and install **AppleMobileDeviceSupport64.msi**
 - Open **PowerShell** (or Windows Terminal with PowerShell) as administrator.
 - Paste the following and press enter:
   
   ```
   iex (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/NelloKudo/Apple-Mobile-Drivers-Installer/main/AppleDrivInstaller.ps1')
   ```
-- A few seconds and we're good, drivers installed!
+- A good minute and we're good, drivers installed!
 
 ## Why is this a thing? Where does it download drivers from?
 
@@ -26,6 +27,7 @@ by default, making their installation a burden for every Apple user which needs 
 
 Since Googling doesn't help with the issue, as all forum posts return strange ways to download such drivers (with most of those being super-outdated)
 I just went for the easy way: a script that installs the **same drivers Windows Update would**, but in an extremely faster way.
+Download iTunes is still needed though, as I can't probably just upload Apple's programs like nothing xd
 
 This'd make life easier for everyone who'd just want to use their phone as hotspot *and not install every hunch of Apple software just to have some internet*.
 
@@ -41,6 +43,8 @@ The script itself requires an internet connection in order to download drivers f
 
 Anyways, that makes no problem: you can just move them out and install them yourself this way!
 
+- Download **iTunes** from [here](https://www.apple.com/itunes/download/win64)
+- Extract it (using WinRAR/7zip) and install **AppleMobileDeviceSupport64.msi**
 - Download the .cab updates from the following links: [Apple USB Drivers](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2020/11/01d96dfd-2f6f-46f7-8bc3-fd82088996d2_a31ff7000e504855b3fa124bf27b3fe5bc4d0893.cab) - [Apple Tether USB Drivers](https://catalog.s.download.windowsupdate.com/c/msdownload/update/driver/drvs/2017/11/netaapl_7503681835e08ce761c52858949731761e1fa5a1.cab)
 - Extract the .cab files
 - Right click the .inf files in the same folder and select **Install**
