@@ -27,7 +27,8 @@ by default, making their installation a burden for every Apple user which needs 
 
 Since Googling doesn't help with the issue, as all forum posts return strange ways to download such drivers (with most of those being super-outdated)
 I just went for the easy way: a script that installs the **same drivers Windows Update would**, but in an extremely faster way.
-Download iTunes is still needed though, as I can't probably just upload Apple's programs like nothing xd
+
+Downloading iTunes is still needed though, as I can't probably just upload Apple's programs like nothing xd
 
 This'd make life easier for everyone who'd just want to use their phone as hotspot *and not install every hunch of Apple software just to have some internet*.
 
