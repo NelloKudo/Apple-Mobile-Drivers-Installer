@@ -7,8 +7,6 @@
 <hr>
 
 ## Download / Installation
-- Download **iTunes** from [here](https://www.apple.com/itunes/download/win64)
-- Extract it (using WinRAR/7zip) and install **AppleMobileDeviceSupport64.msi**
 - Open **PowerShell** (or Windows Terminal with PowerShell) as administrator.
 - Paste the following and press enter:
   
@@ -28,9 +26,9 @@ by default, making their installation a burden for every Apple user which needs 
 Since Googling doesn't help with the issue, as all forum posts return strange ways to download such drivers (with most of those being super-outdated)
 I just went for the easy way: a script that installs the **same drivers Windows Update would**, but in an extremely faster way.
 
-Downloading iTunes is still needed though, as I can't probably just upload Apple's programs like nothing xd
-
 This'd make life easier for everyone who'd just want to use their phone as hotspot *and not install every hunch of Apple software just to have some internet*.
+
+Making the script download iTunes and use its MobileSupport .msi file is still needed though, as I can't probably just upload Apple's programs like nothing... xd
 
 The script pulls drivers from [Microsoft's Update Catalog](https://www.catalog.update.microsoft.com/Home.aspx), which you can pretty much browse yourself to look for Apple's stuff. 
 It just installs the **right ones** from that catalog for them to actually work out of the box on Windows.

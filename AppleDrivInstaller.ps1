@@ -6,13 +6,14 @@
 
 $AppleDri1 = "https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2020/11/01d96dfd-2f6f-46f7-8bc3-fd82088996d2_a31ff7000e504855b3fa124bf27b3fe5bc4d0893.cab"
 $AppleDri2 = "https://catalog.s.download.windowsupdate.com/c/msdownload/update/driver/drvs/2017/11/netaapl_7503681835e08ce761c52858949731761e1fa5a1.cab"
+$AppleITunesLink = "https://www.apple.com/itunes/download/win64"
 
 Write-Host ""
 Write-Host -ForegroundColor Cyan "Welcome to Apple USB and Mobile Device Ethernet drivers installer!!"
 Write-Host ""
 
 ## Checking if the script is being run as admin..
-if (-not ([Security.Principal.WindowsPrincipal] [Security.Principal.WindowsIdentity]::GetCurrent()).IsInRole('Administrators')) {
+if (-not ([Security.Principal.WindowsIdentity]::GetCurrent().Groups -contains 'S-1-5-32-544')) {
     Write-Host -ForegroundColor Yellow "This script requires administrative privileges!"
     Write-Host -ForegroundColor Yellow "Please run the script as an administrator if you want to install drivers."
     pause
@@ -25,9 +26,16 @@ if (-not (Test-Path $destinationFolder)) {
     New-Item -ItemType Directory -Path $destinationFolder | Out-Null
 }
 
-
 try {
-    ## Downloading and extracting drivers..
+    $currentPath = $PWD.Path
+    Write-Host -ForegroundColor Yellow "Downloading Apple iTunes and installing AppleMobileDeviceSupport64.msi.."
+    Write-Host -ForegroundColor Yellow "(It might take a while! Script is not frozen!)"
+    (New-Object System.Net.WebClient).DownloadFile($AppleITunesLink, [System.IO.Path]::Combine($destinationFolder, "iTunes64Setup.exe"))
+    cd "$destinationFolder"
+    Start-Process -FilePath "$destinationFolder\iTunes64Setup.exe" -ArgumentList "/extract" -Wait
+    cd "$currentPath"
+    Start-Process -FilePath "$destinationFolder\AppleMobileDeviceSupport64.msi" -ArgumentList "/qn" -Wait
+
     Write-Host -ForegroundColor Yellow "Downloading Apple USB and Mobile Device Ethernet drivers from Microsoft..."
     Invoke-WebRequest -Uri $AppleDri1 -OutFile ([System.IO.Path]::Combine($destinationFolder, "AppleUSB-486.0.0.0-driv.cab"))
     Invoke-WebRequest -Uri $AppleDri2 -OutFile ([System.IO.Path]::Combine($destinationFolder, "AppleNet-1.8.5.1-driv.cab"))
