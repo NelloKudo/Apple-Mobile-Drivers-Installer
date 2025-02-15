@@ -2,11 +2,10 @@
 
 ## USB Tethering not working? Device only recognized as media? Forget those! 👻
 
-<div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
-  <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" 
-          src="https://streamable.com/plixhe" width="100%" 
-          style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
-</div>
+<p align="center">
+  <img src="https://github.com/NelloKudo/Apple-Mobile-Drivers-Installer/assets/98063377/36bb52c7-e395-4f02-a3d3-c589f980512b" alt="Your GIF" />
+</p>
+<hr>
 
 ## Download / Installation
 - Open **PowerShell** (or Windows Terminal with PowerShell) as administrator.
