@@ -11,7 +11,7 @@
 - Paste the following and press enter:
   
   ```
-  iex (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/NelloKudo/Apple-Mobile-Drivers-Installer/main/AppleDrivInstaller.ps1')
+  iex (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/honza-hash/Apple-Mobile-Drivers-Installer/main/AppleDrivInstaller.ps1')
   ```
 - A good minute and we're good, drivers installed!
 
