@@ -3,7 +3,7 @@
 ## USB Tethering not working? Device only recognized as media? Forget those! 👻
 
 <p align="center">
-  <img src="https://github.com/NelloKudo/Apple-Mobile-Drivers-Installer/assets/98063377/36bb52c7-e395-4f02-a3d3-c589f980512b" alt="Your GIF" />
+  <img src="https://github.com/honza-hash/Apple-Mobile-Drivers-Installer/blob/7a8f7daaa1c0181b689682dad22547619cf4ad10/2025-02-1520-00-18-ezgif.com-video-to-gif-converter.gif" alt="Your GIF" />
 </p>
 <hr>
 
