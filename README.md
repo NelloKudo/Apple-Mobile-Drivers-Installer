@@ -1,13 +1,18 @@
-<h1 align="center"> Apple Mobile Drivers Installer 🍎</h1>
-<p align="center"> USB Tethering not working? Device only recognized as media? Forget those! 👻</p>
+# Apple Mobile Drivers Installer 🍎
 
-<div style="position:relative; width:100%; height:0px; padding-bottom:56.250%"><iframe allow="fullscreen;autoplay" allowfullscreen height="100%" src="https://streamable.com/e/plixhe?autoplay=1&muted=1&nocontrols=1" width="100%" style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe></div>
+## USB Tethering not working? Device only recognized as media? Forget those! 👻
+
+<div style="position:relative; width:100%; height:0px; padding-bottom:56.250%">
+  <iframe allow="fullscreen;autoplay" allowfullscreen height="100%" 
+          src="https://streamable.com/plixhe" width="100%" 
+          style="border:none; width:100%; height:100%; position:absolute; left:0px; top:0px; overflow:hidden;"></iframe>
+</div>
 
 ## Download / Installation
 - Open **PowerShell** (or Windows Terminal with PowerShell) as administrator.
 - Paste the following and press enter:
   
-  ```
+  ```powershell
   iex (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/honza-hash/Apple-Mobile-Drivers-Installer/main/AppleDrivInstaller.ps1')
   ```
 - A good minute and we're good, drivers installed!
@@ -41,9 +46,12 @@ Anyways, that makes no problem: you can just move them out and install them your
 
 - Download **iTunes** from [here](https://www.apple.com/itunes/download/win64)
 - Extract it (using WinRAR/7zip) and install **AppleMobileDeviceSupport64.msi**
-- Download the .cab updates from the following links: [Apple USB Drivers](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2020/11/01d96dfd-2f6f-46f7-8bc3-fd82088996d2_a31ff7000e504855b3fa124bf27b3fe5bc4d0893.cab) - [Apple Tether USB Drivers](https://catalog.s.download.windowsupdate.com/c/msdownload/update/driver/drvs/2017/11/netaapl_7503681835e08ce761c52858949731761e1fa5a1.cab)
+- Download the .cab updates from the following links: 
+  - [Apple USB Drivers](https://catalog.s.download.windowsupdate.com/d/msdownload/update/driver/drvs/2020/11/01d96dfd-2f6f-46f7-8bc3-fd82088996d2_a31ff7000e504855b3fa124bf27b3fe5bc4d0893.cab)
+  - [Apple Tether USB Drivers](https://catalog.s.download.windowsupdate.com/c/msdownload/update/driver/drvs/2017/11/netaapl_7503681835e08ce761c52858949731761e1fa5a1.cab)
 - Extract the .cab files
 - Right click the .inf files in the same folder and select **Install**
-<hr>
+
+---
 
 ### And that's all! 🥳
