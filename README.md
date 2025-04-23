@@ -13,7 +13,7 @@
   ```
   iex (Invoke-RestMethod -Uri 'https://raw.githubusercontent.com/NelloKudo/Apple-Mobile-Drivers-Installer/main/AppleDrivInstaller.ps1')
   ```
-- A good minute and we're good, drivers installed!
+- A good minute and we're done, drivers installed!
 
 ## Why is this a thing? Where does it download drivers from?
 
